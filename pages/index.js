@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Pangsaninan</title>
+        <title>San Fernando, Pampanga</title>
       </Head>
       <Header />
       <About />
