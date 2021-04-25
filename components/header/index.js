@@ -16,15 +16,15 @@ const Header = (props) => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <HeaderSubTitle>Explore</HeaderSubTitle>
-        <HeaderTitle>Pangasinan</HeaderTitle>
-        <ButtonPrimary>Learn More</ButtonPrimary>
+        <HeaderSubTitle>San Fernando</HeaderSubTitle>
+        <HeaderTitle>Pampanga</HeaderTitle>
+        <ButtonPrimary>Explore</ButtonPrimary>
       </HeaderContent>
       <HeaderImage>
         <Image
-          loader={ImageLoader}
+          priority
           alt="Picture of Pangasinan"
-          src="/header.jpg"
+          src="/loader-image.jpg"
           layout="fill"
         />
       </HeaderImage>

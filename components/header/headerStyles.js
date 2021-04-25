@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   grid-template-columns: 1fr;
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;

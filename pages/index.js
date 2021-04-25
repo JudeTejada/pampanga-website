@@ -1,5 +1,9 @@
 import Head from "next/head";
 
+import About from "../components/about";
+import ImageCarousel from "../components/Carousel";
+import Column from "../components/column";
+import Footer from "../components/footer";
 import Header from "../components/header/";
 
 export default function Home() {
@@ -8,8 +12,12 @@ export default function Home() {
       <Head>
         <title>Pangsaninan</title>
       </Head>
-
       <Header />
+      <About />
+      <Column />
+      <Column reverse />
+      <ImageCarousel />
+      <Footer />
     </div>
   );
 }

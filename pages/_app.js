@@ -1,10 +1,12 @@
 import Head from "next/head";
 
 import { GlobalStyle } from "../theme/";
+import "../theme/slider.css";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
-    <GlobalStyle />
+      <GlobalStyle />
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link

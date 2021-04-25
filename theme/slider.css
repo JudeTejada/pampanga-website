@@ -1,0 +1,19 @@
+.rec-carousel {
+  position: relative;
+  width: 100%;
+}
+.rec-slider-container {
+  margin: 0;
+}
+
+.rec.rec-arrow {
+  background: #000;
+  color: #fff;
+}
+
+.rec.rec-arrow:hover,
+.rec.rec-arrow:focus,
+.rec.rec-arrow:focus-within {
+  background: #333 !important;
+  box-shadow: none !important;
+}
