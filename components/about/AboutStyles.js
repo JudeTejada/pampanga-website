@@ -30,6 +30,8 @@ export const Paragraph = styled.p`
   color: #333;
   line-height: 160%;
   text-align:justify;
+  width:120ch;
+  margin-bottom:16px;
   @media only screen and (min-width: 600px) {
     text-align:center;
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import ImageLoader from "../ImageLoader";
 
@@ -16,15 +17,17 @@ const Header = (props) => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <HeaderSubTitle>San Fernando</HeaderSubTitle>
+      <HeaderSubTitle>San Fernando</HeaderSubTitle>
         <HeaderTitle>Pampanga</HeaderTitle>
-        <ButtonPrimary>Explore</ButtonPrimary>
+        <Link href="/#about" passHref>
+          <ButtonPrimary>Explore</ButtonPrimary>
+        </Link>
       </HeaderContent>
       <HeaderImage>
         <Image
           priority
           alt="Picture of Pangasinan"
-          src="/loader-image.jpg"
+          src="/header.jpg"
           layout="fill"
         />
       </HeaderImage>

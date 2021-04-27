@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ImageContainer = styled.div`
   position: relative;
-  background: red;
   width: 100%;
   min-height: 300px;
   &:not(:last-child) {

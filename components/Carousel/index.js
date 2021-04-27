@@ -25,14 +25,10 @@ const ImageCarousel = (props) => {
   return (
     <MainContainer>
       <Content>
-        <Title>Title Goes here</Title>
+        <Title>The Good ol places 🌟</Title>
         <Paragraph>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
+          Lies the pictures of The Place San Fernando Pampanga where you can see
+          some snapshot of the place
         </Paragraph>
       </Content>
       <Carousel
@@ -42,28 +38,32 @@ const ImageCarousel = (props) => {
         itemsToShow={3.5}
       >
         <ImageContainer>
-          <Image src="/loader-image.jpg" layout="fill" />
+          <Image src="/3pic.jpg" layout="fill" />
         </ImageContainer>
         <ImageContainer>
-          <Image src="/loader-image.jpg" layout="fill" />
+          <Image src="/4pic.jpg" layout="fill" />
         </ImageContainer>
         <ImageContainer>
-          <Image src="/loader-image.jpg" layout="fill" />
+          <Image src="/5pic.jpg" layout="fill" />
         </ImageContainer>
         <ImageContainer>
-          <Image src="/loader-image.jpg" layout="fill" />
-        </ImageContainer>
-
-        <ImageContainer>
-          <Image src="/loader-image.jpg" layout="fill" />
+          <Image src="/6pic.jpg" layout="fill" />
         </ImageContainer>
 
         <ImageContainer>
-          <Image src="/loader-image.jpg" layout="fill" />
+          <Image src="/7pic.png" layout="fill" />
         </ImageContainer>
 
         <ImageContainer>
-          <Image src="/loader-image.jpg" layout="fill" />
+          <Image src="/8pic.jpg" layout="fill" />
+        </ImageContainer>
+
+        <ImageContainer>
+          <Image src="/9pic.jpeg" layout="fill" />
+        </ImageContainer>
+
+        <ImageContainer>
+          <Image src="/10pic.jpg" layout="fill" />
         </ImageContainer>
       </Carousel>
     </MainContainer>
