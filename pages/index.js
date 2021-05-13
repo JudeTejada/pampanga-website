@@ -5,6 +5,7 @@ import ImageCarousel from "../components/Carousel";
 import Column from "../components/column";
 import Footer from "../components/footer";
 import Header from "../components/header/";
+import VideIntro from "../components/videoIntro";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         reverse
       />
       <ImageCarousel />
+      <VideIntro />
       <Footer />
     </div>
   );
