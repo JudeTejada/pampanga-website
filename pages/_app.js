@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import { GlobalStyle } from "../theme/";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import "../theme/slider.css";
 
 function MyApp({ Component, pageProps }) {

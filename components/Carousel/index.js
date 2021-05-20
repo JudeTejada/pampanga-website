@@ -12,7 +12,7 @@ import {
   Content,
 } from "./CarouselStyles";
 
-const ImageCarousel = (props) => {
+const ImageCarousel = ({ list, title, description }) => {
   const breakpoints = [
     { width: 1, itemsToShow: 1, itemsToScroll: 1, pagination: false },
     { width: 550, itemsToShow: 1, itemsToScroll: 1, pagination: false },
@@ -25,11 +25,8 @@ const ImageCarousel = (props) => {
   return (
     <MainContainer>
       <Content>
-        <Title>The Good ol places 🌟</Title>
-        <Paragraph>
-          Lies the pictures of The Place San Fernando Pampanga where you can see
-          some snapshot of the place
-        </Paragraph>
+        <Title>{title}</Title>
+        {description && <Paragraph>{description}</Paragraph>}
       </Content>
       <Carousel
         breakPoints={breakpoints}
@@ -37,34 +34,11 @@ const ImageCarousel = (props) => {
         itemsToScroll={3.5}
         itemsToShow={3.5}
       >
-        <ImageContainer>
-          <Image src="/3pic.jpg" layout="fill" />
-        </ImageContainer>
-        <ImageContainer>
-          <Image src="/4pic.jpg" layout="fill" />
-        </ImageContainer>
-        <ImageContainer>
-          <Image src="/5pic.jpg" layout="fill" />
-        </ImageContainer>
-        <ImageContainer>
-          <Image src="/6pic.jpg" layout="fill" />
-        </ImageContainer>
-
-        <ImageContainer>
-          <Image src="/7pic.png" layout="fill" />
-        </ImageContainer>
-
-        <ImageContainer>
-          <Image src="/8pic.jpg" layout="fill" />
-        </ImageContainer>
-
-        <ImageContainer>
-          <Image src="/9pic.jpeg" layout="fill" />
-        </ImageContainer>
-
-        <ImageContainer>
-          <Image src="/10pic.jpg" layout="fill" />
-        </ImageContainer>
+        {list.map((image) => (
+          <ImageContainer>
+            <Image src={image} layout="fill" key={image} />
+          </ImageContainer>
+        ))}
       </Carousel>
     </MainContainer>
   );
