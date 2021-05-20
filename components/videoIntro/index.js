@@ -14,12 +14,7 @@ const VideIntro = (props) => {
     <Container>
       <ContentContainer>
         <MainTitle>A glimpse of Pampanga</MainTitle>
-        <Paragraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magnam
-          consectetur iste repellendus asperiores. Asperiores pariatur esse
-          aspernatur voluptatem exercitationem consequatur officia ipsa saepe,
-          accusantium, numquam et perspiciatis, commodi quidem?
-        </Paragraph>
+      
       </ContentContainer>
 
 
